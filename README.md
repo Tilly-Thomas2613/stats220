@@ -9,4 +9,5 @@ A little about me:
 - I am interested in learning more about all the cool things you can acheive using R studio and coding and how I can use it to visualise data. I really enjoy using R studio so I am excited to further my knowledge of this platform. 
 
 A meme that captures how I currently feel about my university studies is
+
 ![](https://c.tenor.com/8druEACXtX8AAAAd/tenor.gif)
