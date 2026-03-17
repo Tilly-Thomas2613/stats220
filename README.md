@@ -11,10 +11,11 @@
 *In my free time I love to:*
 <ul> 
   <li> Read </li>
-  <li> paint </li>
-  <li> listen to music </li>
+  <li> paint (I get all my art inspo from pinterest https://nz.pinterest.com/) </li>
+  <li> listen to music. My faviourite artist is [Billie eillish](https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH?si=iUH0rFeURuSqAfqitoUzfg) </li> 
   <li> Play squash </li>
 </ul>
+
 
 ### Why I chose STATS 220:
 <ol>
@@ -25,6 +26,8 @@
 </ol>
 
 
-A meme that captures how I currently feel about my university studies is
 
-![](https://media.tenor.com/1IObqyU2Er0AAAAM/library-pile.gif)
+
+A meme that captures how I currently feel about my university studies is:
+
+![](https://media.tenor.com/y2JXkY1pXkwAAAAM/cat-computer.gif)
