@@ -1,13 +1,30 @@
 # Stats220
 
-This is my repo for STATS 220. 
+## This is my repo for STATS 220. 
 
-A little about me:
+### A little about me:
 
-- I am undertaking a degree in Psychology and Applied Statistics
-- I am taking STATS 220 because I want to go into neuropsychology research and applied statistics and Stats220 will provide me with skills that will widen my skill set and help me in this pathway. 
-- I am interested in learning more about all the cool things you can acheive using R studio and coding and how I can use it to visualise data. I really enjoy using R studio so I am excited to further my knowledge of this platform. 
+* I am undertaking a degree in Psychology and Applied Statistics
+* After university, I want to go into **neuropsychology research** to study the brain and help contribute to understanding brain injuries and neurological conditions, or go into **clinical neuropsychology** and work directly with patients.
+
+
+*In my free time I love to:*
+<ul> 
+  <li> Read </li>
+  <li> paint </li>
+  <li> listen to music </li>
+  <li> Play squash </li>
+</ul>
+
+### Why I chose STATS 220:
+<ol>
+  <li> Build on R coding skills </li>
+  <li> Widen my skill set </li>
+  <li> The course supports my future ambition of neuropsychology research </li>
+  <li> I am interested in learning more about R studio and coding and how I can use it to visualise data. </li>
+</ol>
+
 
 A meme that captures how I currently feel about my university studies is
 
-![](https://c.tenor.com/8druEACXtX8AAAAd/tenor.gif)
+![](https://media.tenor.com/1IObqyU2Er0AAAAM/library-pile.gif)
