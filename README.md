@@ -9,8 +9,8 @@
 
 *In my free time I love to:*
 * Read
-* paint (I get all my art inspo from [pinterest](https://nz.pinterest.com/))
-* listen to music. My faviourite artist is [Billie eillish](https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH?si=iUH0rFeURuSqAfqitoUzfg)
+* paint *(I get all my art inspo from [pinterest](https://nz.pinterest.com/))*
+* listen to music. *(My faviourite artist is [Billie eillish](https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH?si=iUH0rFeURuSqAfqitoUzfg))*
 * Play squash
 
 ### Why I chose STATS 220:
