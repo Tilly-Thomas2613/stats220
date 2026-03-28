@@ -1,0 +1,109 @@
+---
+title: Music Listening Habits
+Subtitle: Collecting insights on my music tastes, activities, and listening habits. 
+output: html_fragment
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
+
+```
+
+```{css}
+body { background: linear-gradient(to bottom, #3088a6, #c74664);font-family:'Iosevka Charon'; font-weight: bold; color:#FFFFFF;
+```
+
+## Daily Listening activity 
+
+```{r}
+library(tidyverse)
+logged_data <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vQKi687u6NGQCebUhqnaSbpKqItphtxi61CJC_g54YqlMkYLGNWOILLg97nXDRhWRH_28HnKi7kV8H-/pub?output=csv")
+
+#Renaming variables
+latest_data <- logged_data %>%
+rename(listeninglength_min = 2,
+       songs_listened = 3,
+       genres = 4,
+       activity = 5,
+       location = 6,
+       skipped_any = 7,
+       songs_skipped = 8)
+
+
+#Bar graph listening activity 
+latest_data %>% 
+  ggplot(aes(x = activity)) +
+  geom_bar(fill = "#3088a6") +
+  theme_minimal() +
+  labs(title = "Activity", subtitle = "Activity while listening to music",
+       x = "What activity were you doing while listening to music?", y= "Number of ocassions")
+
+
+```
+
+
+```{r}
+#Bar graph location
+latest_data %>% 
+  ggplot(aes(x = location)) +
+  geom_bar(fill = "#c74664") +
+  theme_minimal() +
+  labs(title = "Location", subtitle = "STATS220",
+       x = "Where were you while listening to music?", y= "Number of ocassions")
+
+```
+
+```{r}
+#Comparison graph
+latest_data %>%
+  ggplot() +
+  geom_bar(aes(y = activity, fill = skipped_any)) +
+  labs(title = "Does the ammount of songs skipped depend on activity?",
+       subtitle = "Comparing Activity to the number of song skips",
+       caption = "Source: STATS220",
+       y = "Activity",
+       x = "Count")
+```
+
+```{r}
+#Comparison graph IS THIS OK?
+groupedlistening_data <- latest_data  %>%
+  mutate(groupedlistening_length = cut(listeninglength_min,
+      breaks = c(0, 30, 60, 100, Inf), 
+      labels = c("0-30", "30-60", "60-100", "100+"),
+      right = TRUE  ))
+
+groupedlistening_data %>%
+  ggplot() +
+  geom_bar(aes(y = activity, fill = groupedlistening_length)) +
+  labs(title = "Does listening length depend on the activity?",
+       subtitle = "Comparing Activity to listening length",
+       caption = "Source: STATS220",
+       y = "Activity",
+       x = "Count of listening length")
+```
+
+
+
+
+```{r}
+#Data Mean listening time
+num_reports <- latest_data$listeninglength_min%>%
+  length()
+mean_listeninglenth <- latest_data$listeninglength_min%>%
+  mean() %>%
+  round(1)
+paste0("Out of the ", num_reports, " completed surveys, My average listening time was ", mean_listeninglenth, " minutes.")
+
+#Data max and min listening time 
+min_listeninglenth <- latest_data$listeninglength_min%>%
+  min() %>%
+  round(1)
+max_listeninglenth <- latest_data$listeninglength_min%>%
+  max() %>% 
+  round(1)
+paste0("My minimum listening time was ", min_listeninglenth, " minutes, and my maximum listening time was ", max_listeninglenth, " minutes.")
+
+```
+
+![](https://media.tenor.com/mww1zsPtPjIAAAAM/gitapro3-gitagita.gif)
