@@ -51,7 +51,7 @@ latest_data %>%
 ```
 
 ```{r}
-#Comparison graph
+#Comparison graph of activity and songs skipped
 latest_data %>%
   ggplot() +
   geom_bar(aes(y = activity, fill = skipped_any)) +
@@ -63,7 +63,7 @@ latest_data %>%
 ```
 
 ```{r}
-#Comparison graph IS THIS OK?
+#Comparison graph of activity and listening length 
 groupedlistening_data %>%
   ggplot() +
   geom_bar(aes(y = activity, fill = groupedlistening_length)) +
