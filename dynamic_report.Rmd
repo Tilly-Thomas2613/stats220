@@ -45,7 +45,7 @@ latest_data %>%
   geom_bar(fill = "#3088a6") +
   theme_minimal() +
   labs(title = "Activity", subtitle = "Activity while listening to music",
-       x = "What activity were you doing while listening to music", y= "Number of ocassions")
+       x = "Activity", y= "Number of ocassions")
 
 
 ```
